@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DXC.EventStore.Contracts\DXC.EventStore.Contracts.csproj" />
+    <ProjectReference Include="..\DXC.EventStore.Infrastructure\DXC.EventStore.Infrastructure.csproj" />
+    <ProjectReference Include="..\DXC.EventStore.PersistWorkItem.App\DXC.EventStore.PersistWorkItem.App.csproj" />
+  </ItemGroup>
+
+</Project>
